@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!--Link Bootstrap-->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-   integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
- <!--Link animation lib css-->
- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--Link Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <!--Link css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+  <!--Link animation lib css-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Index</title>
 </head>
 
@@ -16,9 +18,9 @@
   <div id="header"></div>
   <main>
     <section class="container">
-      <h1 data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+      <h2>
         Descubra a Grandeza do Fitness Global
-      </h1>
+      </h2>
       <div id="sobre-content">
         <div class="text">
           Bem-vindo à maior rede de academias do mundo, presente em mais de
@@ -28,65 +30,76 @@
           da saúde, oferecendo uma ampla gama de modalidades para todos os
           estilos de vida.
         </div>
-        <div class="container-main-images">
-          <div class="card">
-            <div>
-              <h3>Plano de Treino</h3>
-              <p class="text-winth-img">
-                Com nossos planos criados por nossos especialistas te ajudamos
-                a chegar nos seus objetivos.
-              </p>
-              <a href="#" aria-label="read more about our workouts">Leia mais</a>
+        <div class="container text-center">
+          <div class="row row-cols-2">
+            <div class="col">
+              <div class="card-content">
+                <div>
+                  <h3>Plano de Treino</h3>
+                  <p class="text-winth-img">
+                    Com nossos planos criados por nossos especialistas te ajudamos
+                    a chegar nos seus objetivos.
+                  </p>
+                  <a href="#" aria-label="read more about our workouts">Leia mais</a>
+                </div>
+                <div>
+                  <img src="assets/images/tying_shoelaces.png" alt="preparing for training">
+              </div>
+              </div>
             </div>
-            <div>
-              <img src="" alt="image of athlete tying logs preparing for training" />
-            </div>
-          </div>
-          <div class="card">
-            <div>
-              <h3>Perder peso</h3>
-              <p class="text-winth-img">
-                Divida a difícil tarefa de perder gordura corporal e ganhar
-                massa muscular, conheça nossos guias.
-              </p>
-              <a href="#" aria-label="read more about losing weight">Leia mais</a>
-            </div>
-            <div>
-              <img src="" alt="athlete measuring weight image" />
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div>
-            <h3>Melhor Equipamento</h3>
-            <p class="text-winth-img">
-              usamos equipamentos de última geração e encorajamos startups a
-              criarem novas tecnologias.
-            </p>
-            <a href="#" aria-label="read more about our equipment">Leia mais</a>
-          </div>
-          <div>
-            <img src="" alt="image dumbbell equipment" />
-          </div>
-        </div>
-        <div class="card">
-          <div>
-            <h3>Plano nutricional</h3>
-            <p class="text-winth-img">
-              alido com diversos objetivo, mas o foco principal é a saúde e
-              qualidade de vida, tudo apartir da nutrição.
-            </p>
-            <a href="#" aria-label="read more about the nutritional plan">Leia mais</a>
-          </div>
-          <div>
-            <img src="" alt="image athlete hydrating for training" />
+              <div class="col">
+                <div class="card-content">
+                  <div>
+                    <img src="assets/images/halters.png" alt="image dumbbell equipment" />
+                  </div>
+                  <div>
+                    <h3>Melhor Equipamento</h3>
+                    <p class="text-winth-img">
+                      usamos equipamentos de última geração e encorajamos startups a
+                      criarem novas tecnologias.
+                    </p>
+                    <a href="#" aria-label="read more about our equipment">Leia mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card-content">
+                  <div>
+                    <h3>Perder peso</h3>
+                    <p class="text-winth-img">
+                      Divida a difícil tarefa de perder gordura corporal e ganhar
+                      massa muscular, conheça nossos guias.
+                    </p>
+                    <a href="#" aria-label="read more about losing weight">Leia mais</a>
+                  </div>
+                  <div>
+                    <img src="assets/images/measuring_weight.png" alt="athlete measuring weight image" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="col">
+                <div class="card-content">
+                  <div>
+                    <img src="assets/images/drinking water.png" alt="image athlete hydrating for training" />
+                  </div>
+                  <div>
+                    <h3>Plano nutricional</h3>
+                    <p class="text-winth-img">
+                      alido com diversos objetivo, mas o foco principal é a saúde e
+                      qualidade de vida, tudo apartir da nutrição.
+                    </p>
+                    <a href="#" aria-label="read more about the nutritional plan">Leia mais</a>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="container attractive-call">
-        <h2 data-aos="zoom-out-down">Simplesmente Global</h2>
+      <div class="container attractive-call"  data-aos="fade-left">
+        <h2>Simplesmente Global</h2>
         <p>
           Do poder da musculação à elegância das danças, da adrenalina das lutas ao ritmo alucinante do HIIT, temos tudo
           para tornar sua jornada de bem-estar única e emocionante. Nossos instrutores altamente qualificados estão
@@ -94,7 +107,7 @@
         </p>
       </div>
       <div class="container-fluid" class="bgImage-02">
-        <h2 >Um universo, um estilo de vida</h2>
+        <h2>Um universo, um estilo de vida</h2>
       </div>
     </section>
     <section>

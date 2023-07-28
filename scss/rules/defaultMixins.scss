@@ -1,0 +1,13 @@
+@mixin reset($margin, $padding, $box) {
+  margin: $margin;
+  padding: $padding;
+  box-sizing: $box;
+}
+
+@mixin contentBox($w, $h, $image, $size, $repeat) {
+    width: $w;
+    min-height: $h;
+    background-image: $image;
+    background-size: $size;
+    background-repeat: $repeat;
+  }
