@@ -10,10 +10,9 @@ body, html {
     background-position: center;
   }
 
-.container-nav {
-    width: 100%;
+.navbar-line {
     height: 60px;
-    background-color: $bgNav;
+    background-color: green;//$bgNav;
 
     header {
         .logo-content {
@@ -59,7 +58,7 @@ body, html {
 }
 
 @media (max-width: 2100px) and (min-width: 1890px) {
-    .container-nav {
+    .navbar-line {
         header {
             margin-left: 268px;
             #navbarNavAltMarkup {
@@ -70,7 +69,7 @@ body, html {
   }
 
 @media (max-width: 760px) {
-    .container-nav {
+    .navbar-line {
      header {
          margin-left: 5px;
      }
@@ -79,7 +78,7 @@ body, html {
 }
 
 @media (max-width:545px) {
-    .container-nav {
+    .navbar-line {
         .information-top {
             .h1 {font-size: 1.4em;} .h5 {font-size: 1em; margin-right: 5px;}}
  }
