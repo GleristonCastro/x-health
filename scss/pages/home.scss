@@ -16,10 +16,10 @@ body, html {
     background-color: $bgNav;
 
     header {
-        margin-left: 70px;
         .logo-content {
+            margin-left: 80px;
             width: 100%;
-            max-width: 70%;
+            max-width: 60%;
             font-family: 'Zen Dots', cursive;
             span {
                 color: $mainYellow;
@@ -28,7 +28,7 @@ body, html {
 
         #navbarNavAltMarkup {
             .nav-link {
-                margin-left: 90px;
+                margin-right: 70px;
                 color: $mainWhite;
                 font-family: Poppins;
                 font-size: 20px;
@@ -41,7 +41,7 @@ body, html {
 
     .information-top {
         padding-top: 115px;
-        margin-left: 75px;
+        margin-left: 85px;
         width: 100%;
         max-width: 690px;
 
@@ -58,15 +58,29 @@ body, html {
     }
 }
 
+@media (max-width: 2100px) and (min-width: 1890px) {
+    .container-nav {
+        header {
+            margin-left: 268px;
+            #navbarNavAltMarkup {
+                    margin-right: 600px;
+                }
+         }
+        }
+  }
+
 @media (max-width: 760px) {
     .container-nav {
      header {
          margin-left: 5px;
      }
-     .information-top {
-        .h1 {font-size: 3em;}
-        .h5 {font-size: 1.1em;}
-         margin-left: 5px;
-     }
+     .information-top {margin-left: 10px; .h1 {font-size: 3em;} .h5 {font-size: 1.1em; margin-right: 5px;}}
     }
+}
+
+@media (max-width:545px) {
+    .container-nav {
+        .information-top {
+            .h1 {font-size: 1.4em;} .h5 {font-size: 1em; margin-right: 5px;}}
+ }
 }

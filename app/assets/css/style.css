@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins&family=Zen+Dots&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-@media (max-width: 760px) {
-  .container-nav header {
-    margin-left: 5px;
-  }
-  .container-nav .information-top {
-    margin-left: 5px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -34,19 +26,17 @@ body, html {
   height: 60px;
   background-color: rgba(5, 5, 5, 0.71);
 }
-.container-nav header {
-  margin-left: 70px;
-}
 .container-nav header .logo-content {
+  margin-left: 80px;
   width: 100%;
-  max-width: 70%;
+  max-width: 60%;
   font-family: "Zen Dots", cursive;
 }
 .container-nav header .logo-content span {
   color: #ebba34;
 }
 .container-nav header #navbarNavAltMarkup .nav-link {
-  margin-left: 90px;
+  margin-right: 70px;
   color: #f5f5f5;
   font-family: Poppins;
   font-size: 20px;
@@ -56,7 +46,7 @@ body, html {
 }
 .container-nav .information-top {
   padding-top: 115px;
-  margin-left: 75px;
+  margin-left: 85px;
   width: 100%;
   max-width: 690px;
 }
@@ -70,18 +60,36 @@ body, html {
   font-size: 32px;
 }
 
+@media (max-width: 2100px) and (min-width: 1890px) {
+  .container-nav header {
+    margin-left: 268px;
+  }
+  .container-nav header #navbarNavAltMarkup {
+    margin-right: 600px;
+  }
+}
 @media (max-width: 760px) {
   .container-nav header {
     margin-left: 5px;
   }
   .container-nav .information-top {
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .container-nav .information-top .h1 {
     font-size: 3em;
   }
   .container-nav .information-top .h5 {
     font-size: 1.1em;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 545px) {
+  .container-nav .information-top .h1 {
+    font-size: 1.4em;
+  }
+  .container-nav .information-top .h5 {
+    font-size: 1em;
+    margin-right: 5px;
   }
 }
 
