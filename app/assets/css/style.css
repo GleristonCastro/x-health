@@ -10,87 +10,110 @@ body, html {
   width: 100%;
   min-height: 100vh;
   color: #f5f5f5;
+  background-color: #050505;
+  font-family: "Poppins", sans-serif;
 }
 
 .bgImage-01 {
   width: 100%;
   min-height: 100vh;
-  background-image: url(./../images/hero-background.png);
+  background-image: url(./../images/hero-background.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.container-nav {
-  width: 100%;
+.container-content .navbar-line {
   height: 60px;
   background-color: rgba(5, 5, 5, 0.71);
 }
-.container-nav header .logo-content {
+.container-content .navbar-line header .logo-content {
   margin-left: 80px;
   width: 100%;
   max-width: 60%;
   font-family: "Zen Dots", cursive;
 }
-.container-nav header .logo-content span {
+.container-content .navbar-line header .logo-content span {
   color: #ebba34;
 }
-.container-nav header #navbarNavAltMarkup .nav-link {
+.container-content .navbar-line header #navbarNavAltMarkup .nav-link {
   margin-right: 70px;
   color: #f5f5f5;
-  font-family: Poppins;
   font-size: 20px;
 }
-.container-nav header #navbarNavAltMarkup a:hover {
+.container-content .navbar-line header #navbarNavAltMarkup a:hover {
   text-shadow: 1px 1px 1px #ebba34;
 }
-.container-nav .information-top {
+.container-content .information-top {
   padding-top: 115px;
   margin-left: 85px;
   width: 100%;
   max-width: 690px;
 }
-.container-nav .information-top .h1 {
+.container-content .information-top .h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
   font-weight: bold;
 }
-.container-nav .information-top .h5 {
-  font-family: "Poppins", sans-serif;
+.container-content .information-top .h5 {
   font-size: 32px;
 }
 
-@media (max-width: 2100px) and (min-width: 1890px) {
-  .container-nav header {
-    margin-left: 268px;
-  }
-  .container-nav header #navbarNavAltMarkup {
-    margin-right: 600px;
-  }
-}
 @media (max-width: 760px) {
-  .container-nav header {
+  .navbar-line header {
     margin-left: 5px;
   }
-  .container-nav .information-top {
+  .navbar-line .information-top {
     margin-left: 10px;
   }
-  .container-nav .information-top .h1 {
+  .navbar-line .information-top .h1 {
     font-size: 3em;
   }
-  .container-nav .information-top .h5 {
+  .navbar-line .information-top .h5 {
     font-size: 1.1em;
     margin-right: 5px;
   }
 }
 @media (max-width: 545px) {
-  .container-nav .information-top .h1 {
+  .navbar-line .information-top .h1 {
     font-size: 1.4em;
   }
-  .container-nav .information-top .h5 {
+  .navbar-line .information-top .h5 {
     font-size: 1em;
     margin-right: 5px;
   }
+}
+.about-call {
+  line-height: 70.5px;
+}
+
+.card-content {
+  width: 100%;
+  max-width: 654px;
+}
+.card-content .text-winth-img {
+  background-color: #191919;
+}
+.card-content .img-container, .card-content .text-winth-img {
+  line-height: 30px;
+  width: 100%;
+  max-width: 330px;
+  height: 330px;
+}
+.card-content .img-container p, .card-content .text-winth-img p {
+  width: 100%;
+  max-width: 255px;
+}
+.card-content .img-container img, .card-content .text-winth-img img {
+  width: 100%;
+}
+.card-content .rectangle-yellow {
+  width: 9px;
+  height: 9px;
+}
+.card-content a {
+  margin: 0 5px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
