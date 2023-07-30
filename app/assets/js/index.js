@@ -1,16 +1,23 @@
 const includes = (sections) => {
-  for(let i = 0; i < sections.length; i++ ){
+  for (let i = 0; i < sections.length; i++) {
+    const startTime = performance.now();
+
     fetch(`${sections[i]}.html`)
       .then(response => response.text())
       .then(html => {
-          const footerDiv = document.getElementById(sections[i]);
-          footerDiv.innerHTML = html;
+        const includeHtml = document.getElementById(sections[i]);
+        includeHtml.innerHTML = html;
+
+        const endTime = performance.now();
+        const timeElapsed = endTime - startTime;
+        console.log(`Tempo para "${sections[i]}": ${timeElapsed.toFixed(2)} ms`);
       });
   }
 }
 
 window.onload = function () {
   includes([
+    'video',
     'about',
     'calcBmi',
     'cases',
@@ -21,10 +28,9 @@ window.onload = function () {
     'plans',
     'schedules',
     'socialNetwork',
-    'teachers',
-    'video'
+    'teachers'
   ]);
-  setTimeout(range, 101);
+  setTimeout(range, 100);
 };
 
 async function range() {
@@ -72,25 +78,24 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(moveMarquee, 0);
     }
 
-    
-  setTimeout(moveMarquee, 101);
-}
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  function videoControl() {
-    const video = document.getElementById('videoId')
-  
-    const execute = () => {
-      console.log(video);
-     if(video.paused) {
-      video.play() 
-     } else {
-      video.pause()
-     }
-    }
-  
-    video.addEventListener('click', execute)
+    moveMarquee();
   }
-  setTimeout(videoControl, 110)
-})
+
+  async function videoControl() {
+    const btn = document.getElementById('btnVideo');
+    const boxVideo = document.getElementById('videoId');
+
+    const execute = () => {
+      console.log(boxVideo);
+      if (boxVideo.paused) {
+        boxVideo.play()
+      } else {
+        boxVideo.pause()
+      }
+    }
+
+    btn.addEventListener('click', execute)
+  }
+  setTimeout(videoControl, 100)
+
+});
