@@ -1,5 +1,3 @@
-import { executeVideo } from "./video.js";
-
 const includes = (sections) => {
   for (let i = 0; i < sections.length; i++) {
     fetch(`${sections[i]}.html`)
@@ -13,22 +11,6 @@ const includes = (sections) => {
 
 window.onload = function () {
   includes([
-<<<<<<< HEAD
-  'about',
-  'calcBmi',
-  'cases',
-  'decisionMaking',
-  'dividerAnimation',
-  'footer',
-  'header',
-  'plans',
-  'schedules',
-  'socialNetwork',
-  'teachers',
-  'video'
-]);
-};
-=======
     'about',
     'calcBmi',
     'cases',
@@ -43,8 +25,6 @@ window.onload = function () {
     'video'
   ]);
   setTimeout(range, 100);
-  setTimeout(moveMarquee, 101);
-  setTimeout(executeVideo,102)
 };
 
 async function range() {
@@ -77,17 +57,22 @@ async function range() {
   range2.addEventListener("input", handleRangeInput);
 }
 
-const marqueeText = document.getElementById("marqueeText");
+document.addEventListener("DOMContentLoaded", () => {
+  const marqueeText = document.getElementById("marqueeText");
+  if (marqueeText) {
+    const scrollSpeed = 50;
 
-const scrollSpeed = 50;
+    function moveMarquee() {
+      marqueeText.style.transform = `translateX(${scrollSpeed}px)`;
 
-function moveMarquee() {
-  marqueeText.style.transform = `translateX(${scrollSpeed}px)`;
+      if (marqueeText.offsetLeft > marqueeText.offsetWidth) {
+        marqueeText.style.transform = "translateX(-100%)";
+      }
 
-  if (marqueeText.offsetLeft > marqueeText.offsetWidth) {
-    marqueeText.style.transform = "translateX(-100%)";
+      setTimeout(moveMarquee, 0);
+    }
+
+    
+  setTimeout(moveMarquee, 101);
   }
-
-  setTimeout(moveMarquee, 0);
-}
->>>>>>> 002ee8a1e7132bd143e17cb56a5889e96c3d455b
+});
