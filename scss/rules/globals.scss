@@ -7,3 +7,21 @@
 // font-family: 'Poppins', sans-serif;
 // font-family: 'Zen Dots', cursive;
 
+body{
+  background-color: #050505;
+  color: #F5F5F5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+}
+
+.default-section-top-space {
+  margin-top: 150px;
+}
+
+a {
+  text-decoration: none;
+}

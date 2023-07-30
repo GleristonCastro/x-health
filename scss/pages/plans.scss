@@ -1,0 +1,67 @@
+#plans {
+  .row {
+    .plans-title {
+      color: $mainWhite;
+      text-align: center;
+      margin-bottom: 50px;
+
+      span {
+        color: $mainYellow;
+      }
+    }
+
+    .badge-price {
+      position: absolute;
+      top: -10px;
+      left: 50px;
+      padding: 10px 20px;
+      background: $mainBlack;
+      color: $mainYellow;
+      font-weight: 700;
+    }
+
+    .card {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover{
+        transform: scale(1.03);
+        transition: 0.3s ease;
+      }
+
+      &-body {
+        background-color: $secondaryBlack;
+        color: $mainWhite;
+        border-radius: 10px;
+
+        .row {
+          height: 150px;
+        }
+
+      &.special-offer{
+        background-color: $mainYellow;
+        color: $secondaryBlack;
+
+        .card-price {
+          color: $mainBlack;
+        }
+      }
+      }
+
+      &-title {
+        font-style: italic;
+      }
+
+      &-price {
+        color: $mainYellow;
+        text-align: center;
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      
+    }
+  }
+}

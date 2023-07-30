@@ -1,0 +1,117 @@
+#calcBmi {
+  .row {
+    .calcBmi-title {
+      color: $mainWhite;
+      text-align: center;
+      margin-bottom: 50px;
+
+      span {
+        color: $mainYellow;
+      }
+
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        i {
+          font-size: x-small;
+        }
+      }
+    }
+  }
+  .ideal-weight, .bmi-now{
+    font-weight: 700!important;
+    color: $mainYellow;
+
+    span{
+    font-weight: 700!important;
+    };
+  }
+}
+
+.rangers {
+  .range-box {
+    position: relative;
+  }
+
+  input[type="range"] {
+    width: 300px;
+    margin: 18px 0;
+    -webkit-appearance: none;
+  }
+
+  input[type="range"]:focus {
+    outline: none;
+  }
+
+  input[type="range"]+label {
+    position: absolute;
+    top: -35px;
+    left: 194px;
+    width: 60px;
+    padding: 5px 0;
+    text-align: center;
+    border: 2px solid $mainYellow;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: $mainYellow;
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    background: $mainBlack;
+    border-radius: 50%;
+    border: 1px solid $mainYellow;
+    margin-top: -7px;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-moz-range-track {
+    background: $mainYellow;
+    border-radius: 4px;
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid $mainYellow;
+    margin-top: -7px;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-ms-track {
+    background: $mainYellow;
+    border-radius: 4px;
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid $mainYellow;
+    margin-top: -7px;
+    cursor: pointer;
+  }
+}

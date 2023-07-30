@@ -1,0 +1,42 @@
+#decisionMaking {
+  .row {
+    .desionMaking-title {
+      color: $mainYellow;
+      text-align: center;
+      margin-bottom: 50px;
+
+      span {
+        color: $mainWhite
+      }
+    }
+
+    .desionMaking-card {
+      background-color: $secondaryBlack;
+      height: 40vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-content: center;
+      gap: 20px;
+
+      i {
+        font-size: 4rem;
+        color: $mainYellow;
+      }
+    }
+  }
+
+  .button-enroll {
+    padding: 20px;
+    background-color: $mainYellow;
+    color: $secondaryBlack;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+}
