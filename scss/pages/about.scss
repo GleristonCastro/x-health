@@ -1,0 +1,36 @@
+.about-call {
+    line-height: 70.5px;
+}
+
+.card-content {
+    width: 100%;
+    max-width: 654px;
+
+    .text-winth-img {
+        background-color: $bgTextWinthImage;
+    }
+
+    .img-container, .text-winth-img {
+        line-height: 30px;
+        width: 100%;
+        max-width: 330px;
+        height: 330px;
+
+        p {
+            width: 100%;
+            max-width: 255px;
+        }
+
+        img { width: 100%; }
+        
+    }
+    .rectangle-yellow {
+        width: 9px;
+        height: 9px;
+    }
+
+    a {
+        margin:0 5px;
+        text-decoration: none;
+    }
+}
