@@ -84,12 +84,13 @@ body, html {
   }
 }
 .about-call {
+  padding-top: 200px;
   line-height: 70.5px;
 }
 
 .card-content {
   width: 100%;
-  max-width: 654px;
+  max-width: 664px;
 }
 .card-content .text-winth-img {
   background-color: #191919;
@@ -97,8 +98,8 @@ body, html {
 .card-content .img-container, .card-content .text-winth-img {
   line-height: 30px;
   width: 100%;
-  max-width: 330px;
-  height: 330px;
+  max-width: 332px;
+  height: 332px;
 }
 .card-content .img-container p, .card-content .text-winth-img p {
   width: 100%;
@@ -115,5 +116,7 @@ body, html {
   margin: 0 5px;
   text-decoration: none;
 }
+
+
 
 /*# sourceMappingURL=style.css.map */

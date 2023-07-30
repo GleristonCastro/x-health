@@ -1,3 +1,5 @@
+import { executeVideo } from "./video.js";
+
 const includes = (sections) => {
   for(let i = 0; i < sections.length; i++ ){
     fetch(`${sections[i]}.html`)
