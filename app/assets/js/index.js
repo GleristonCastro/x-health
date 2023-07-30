@@ -78,19 +78,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  function videoControl() {
-    const video = document.getElementById('videoId')
-  
-    const execute = () => {
-      console.log(video);
-     if(video.paused) {
-      video.play() 
-     } else {
-      video.pause()
-     }
-    }
-  
-    video.addEventListener('click', execute)
-  }
-  setTimeout(videoControl, 110)
 })
+async function videoControl() {
+  const video = document.getElementById('videoId')
+
+  const execute = () => {
+    console.log(video);
+   if(video.paused) {
+    video.play() 
+   } else {
+    video.pause()
+   }
+  }
+
+  video.addEventListener('click', execute)
+}
