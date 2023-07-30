@@ -112,5 +112,43 @@ body, html {
     margin-right: 5px;
   }
 }
+<<<<<<< HEAD
+.about-call {
+  padding-top: 200px;
+  line-height: 70.5px;
+}
+
+.card-content {
+  width: 100%;
+  max-width: 664px;
+}
+.card-content .text-winth-img {
+  background-color: #191919;
+}
+.card-content .img-container, .card-content .text-winth-img {
+  line-height: 30px;
+  width: 100%;
+  max-width: 332px;
+  height: 332px;
+}
+.card-content .img-container p, .card-content .text-winth-img p {
+  width: 100%;
+  max-width: 255px;
+}
+.card-content .img-container img, .card-content .text-winth-img img {
+  width: 100%;
+}
+.card-content .rectangle-yellow {
+  width: 9px;
+  height: 9px;
+}
+.card-content a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+=======
+>>>>>>> 002ee8a1e7132bd143e17cb56a5889e96c3d455b
+
+
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,5 @@
+import { executeVideo } from "./video.js";
+
 const includes = (sections) => {
   for (let i = 0; i < sections.length; i++) {
     fetch(`${sections[i]}.html`)
@@ -11,6 +13,22 @@ const includes = (sections) => {
 
 window.onload = function () {
   includes([
+<<<<<<< HEAD
+  'about',
+  'calcBmi',
+  'cases',
+  'decisionMaking',
+  'dividerAnimation',
+  'footer',
+  'header',
+  'plans',
+  'schedules',
+  'socialNetwork',
+  'teachers',
+  'video'
+]);
+};
+=======
     'about',
     'calcBmi',
     'cases',
@@ -72,3 +90,4 @@ function moveMarquee() {
 
   setTimeout(moveMarquee, 0);
 }
+>>>>>>> 002ee8a1e7132bd143e17cb56a5889e96c3d455b
