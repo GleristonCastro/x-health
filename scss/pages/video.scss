@@ -2,8 +2,14 @@
     position: relative;
 }
 
-#text-video {
+.text-video {
+    font-family: 'Zen Dots', cursive;
+    font-variant: small-caps;
+    color: transparent;
+    -webkit-text-stroke: 2px #000;
+    line-height: 58px;
+    background-color: transparent;
     position: absolute;
-    top: 700px;
-    left: 550px;
+    top: 785px;
+    left: 410px;
 }

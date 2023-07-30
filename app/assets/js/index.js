@@ -1,10 +1,10 @@
 const includes = (sections) => {
-  for (let i = 0; i < sections.length; i++) {
+  for(let i = 0; i < sections.length; i++ ){
     fetch(`${sections[i]}.html`)
       .then(response => response.text())
       .then(html => {
-        const footerDiv = document.getElementById(sections[i]);
-        footerDiv.innerHTML = html;
+          const footerDiv = document.getElementById(sections[i]);
+          footerDiv.innerHTML = html;
       });
   }
 }
@@ -24,7 +24,7 @@ window.onload = function () {
     'teachers',
     'video'
   ]);
-  setTimeout(range, 100);
+  setTimeout(range, 101);
 };
 
 async function range() {
@@ -74,5 +74,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
   setTimeout(moveMarquee, 101);
-  }
+}
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  function videoControl() {
+    const video = document.getElementById('videoId')
+  
+    const execute = () => {
+      console.log(video);
+     if(video.paused) {
+      video.play() 
+     } else {
+      video.pause()
+     }
+    }
+  
+    video.addEventListener('click', execute)
+  }
+  setTimeout(videoControl, 110)
+})
