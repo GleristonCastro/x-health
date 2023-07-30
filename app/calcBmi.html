@@ -1,1 +1,45 @@
-<section class="container-xxl"></section>
+<section class="container-xxl">
+  <div class="row g-0 justify-content-center">
+    <h2 class="calcBmi-title display-4">Calcule seu IMC</h2>
+  </div>
+  <div class="row g-0">
+    <div class="col-4">
+      <p class="fs-5 text-start mb-5">O Índice de Massa Corporal (IMC) é uma medida de gordura corporal com base na altura e peso que se aplica a homens e mulheres adultos.</p>
+      <ul>
+        <li><i class="fa-solid fa-arrow-right"></i> 18 ~ 25: Peso normal</li>
+        <li><i class="fa-solid fa-arrow-right"></i> 25 ~ 30: Sobrepeso</li>
+        <li><i class="fa-solid fa-arrow-right"></i> 30 ~ 40: Obsiddade</li>
+        <li><i class="fa-solid fa-arrow-right"></i> Acima de 40: Obsidade morbida</li>
+      </ul>
+    </div>
+    <div class="col-4 d-flex flex-column justify-content-center align-items-center gap-4">
+      <div class="rangers">
+        <p>Altura:</p>
+        <div class="range-box">
+          <input type="range" name="height" id="height" min="0" max="220" value="170" />
+          <label for="height">170</label>
+        </div>
+      </div>
+      <div class="rangers">
+        <p>Peso:</p>
+        <div class="range-box">
+          <input type="range" name="weight" id="weight" min="0" max="350" value="70" />
+          <label for="weight" style="left:35px">70</label>
+        </div>
+        Dica: Arraste para os lados o range do imput
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row g-0 text-center">
+        <div class="col-12">
+          <p class="display-4 ideal-weight">72,2 <span class="display-6">kg</span></p>
+          <p>Seu peso recomendado</p>
+        </div>
+        <div class="col-12">
+          <p class="display-4 bmi-now">24,2</p>
+          <p>ìndice de massa corporal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
