@@ -1,19 +1,17 @@
-import { executeVideo } from "./video.js";
 
 const includes = (sections) => {
-  for (let i = 0; i < sections.length; i++) {
+  for(let i = 0; i < sections.length; i++ ){
     fetch(`${sections[i]}.html`)
       .then(response => response.text())
       .then(html => {
-        const footerDiv = document.getElementById(sections[i]);
-        footerDiv.innerHTML = html;
+          const footerDiv = document.getElementById(sections[i]);
+          footerDiv.innerHTML = html;
       });
   }
 }
 
 window.onload = function () {
   includes([
-<<<<<<< HEAD
   'about',
   'calcBmi',
   'cases',
@@ -27,24 +25,9 @@ window.onload = function () {
   'teachers',
   'video'
 ]);
-};
-=======
-    'about',
-    'calcBmi',
-    'cases',
-    'decisionMaking',
-    'dividerAnimation',
-    'footer',
-    'header',
-    'plans',
-    'schedules',
-    'socialNetwork',
-    'teachers',
-    'video'
-  ]);
-  setTimeout(range, 100);
+setTimeout(range, 100);
   setTimeout(moveMarquee, 101);
-  setTimeout(executeVideo,102)
+  setTimeout(executeVideo, 102)
 };
 
 async function range() {
@@ -90,4 +73,16 @@ function moveMarquee() {
 
   setTimeout(moveMarquee, 0);
 }
->>>>>>> 002ee8a1e7132bd143e17cb56a5889e96c3d455b
+
+
+
+async function executeVideo() {
+const btn = document.getElementById('btn-video')
+const video = document.querySelector('#video')
+  if (video.paused) {
+    video.play()
+  } else {
+    video.pause()
+  }
+  btn.addEventListener('click', executeVideo)
+}
