@@ -1,7 +1,10 @@
 @import "./rules/globals.scss";
 
-//Import home
-@import "./pages/home.scss";
+//Import header
+@import "./pages/header.scss";
+
+//Import about
+@import "./pages/about.scss";
 
 //Import dividerAnimation
 @import "./pages/dividerAnimation.scss";
