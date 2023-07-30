@@ -1,4 +1,3 @@
-
 const includes = (sections) => {
   for(let i = 0; i < sections.length; i++ ){
     fetch(`${sections[i]}.html`)
@@ -12,22 +11,20 @@ const includes = (sections) => {
 
 window.onload = function () {
   includes([
-  'about',
-  'calcBmi',
-  'cases',
-  'decisionMaking',
-  'dividerAnimation',
-  'footer',
-  'header',
-  'plans',
-  'schedules',
-  'socialNetwork',
-  'teachers',
-  'video'
-]);
-setTimeout(range, 100);
-  setTimeout(moveMarquee, 101);
-  setTimeout(executeVideo, 102)
+    'about',
+    'calcBmi',
+    'cases',
+    'decisionMaking',
+    'dividerAnimation',
+    'footer',
+    'header',
+    'plans',
+    'schedules',
+    'socialNetwork',
+    'teachers',
+    'video'
+  ]);
+  setTimeout(range, 100);
 };
 
 async function range() {
@@ -60,29 +57,22 @@ async function range() {
   range2.addEventListener("input", handleRangeInput);
 }
 
-const marqueeText = document.getElementById("marqueeText");
+document.addEventListener("DOMContentLoaded", () => {
+  const marqueeText = document.getElementById("marqueeText");
+  if (marqueeText) {
+    const scrollSpeed = 50;
 
-const scrollSpeed = 50;
+    function moveMarquee() {
+      marqueeText.style.transform = `translateX(${scrollSpeed}px)`;
 
-function moveMarquee() {
-  marqueeText.style.transform = `translateX(${scrollSpeed}px)`;
+      if (marqueeText.offsetLeft > marqueeText.offsetWidth) {
+        marqueeText.style.transform = "translateX(-100%)";
+      }
 
-  if (marqueeText.offsetLeft > marqueeText.offsetWidth) {
-    marqueeText.style.transform = "translateX(-100%)";
+      setTimeout(moveMarquee, 0);
+    }
+
+    
+  setTimeout(moveMarquee, 101);
   }
-
-  setTimeout(moveMarquee, 0);
-}
-
-
-
-async function executeVideo() {
-const btn = document.getElementById('btn-video')
-const video = document.querySelector('#video')
-  if (video.paused) {
-    video.play()
-  } else {
-    video.pause()
-  }
-  btn.addEventListener('click', executeVideo)
-}
+});
