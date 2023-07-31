@@ -1,0 +1,16 @@
+#teachers {
+  margin-bottom: 80px;
+
+  .row {
+    .teachers-title {
+      color: $mainWhite;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+  }
+  .carousel-indicators {
+    bottom: -80px;
+    margin-bottom: 0;
+  }
+}
