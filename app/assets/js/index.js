@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function videoControl() {
-    const btn = document.getElementById('btnVideo');
+    const btn = document.getElementById('control');
     const boxVideo = document.getElementById('videoId');
 
     const execute = () => {
@@ -98,17 +98,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   setTimeout(videoControl, 100)
 
-});
-
-window.addEventListener('load', function() {
-  new Glider(document.querySelector('.glider'), {
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    draggable: true,
-    dots: '.dots',
-    arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next'
-    }
-  });
 });
