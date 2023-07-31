@@ -1,0 +1,13 @@
+.carousel-content {
+    img {
+        width: 100%;
+        border-radius: 5px;
+        max-width: 392.52px;
+        height: 597px;
+        object-fit: cover;
+    }
+
+    ol.carousel-indicators li::marker {
+        list-style-type: none;
+    }
+}
