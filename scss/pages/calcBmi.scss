@@ -1,4 +1,6 @@
 #calcBmi {
+  background: $secondaryBlack;
+  padding: 50px 0;
   .row {
     .calcBmi-title {
       color: $mainWhite;
@@ -41,6 +43,7 @@
     width: 300px;
     margin: 18px 0;
     -webkit-appearance: none;
+    appearance: none;
   }
 
   input[type="range"]:focus {
@@ -87,6 +90,7 @@
 
   input[type="range"]::-moz-range-thumb {
     -webkit-appearance: none;
+    appearance: none;
     height: 24px;
     width: 24px;
     background: #fff;
@@ -106,6 +110,7 @@
 
   input[type="range"]::-ms-thumb {
     -webkit-appearance: none;
+    appearance: none;
     height: 24px;
     width: 24px;
     background: #fff;
