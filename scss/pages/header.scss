@@ -1,104 +1,60 @@
-* {
-    @include reset(0, 0, border-box)
-}
-
-body,
-html {
-    width: 100%;
-    min-height: 100vh;
-    color: $mainWhite;
-    background-color: $mainBlack;
-    font-family: 'Poppins', sans-serif;
-}
-
-.bgImage-01 {
-    @include contentBox(100%, 100vh, url(./../images/hero-background.webp), cover, no-repeat);
-    background-position: center;
-}
-
-.container-content {
-
-    .navbar-line {
-        height: 60px;
-        background-color: $bgNav;
-
-        header {
-            .logo-content {
-                margin-left: 80px;
-                width: 100%;
-                max-width: 60%;
-                font-family: 'Zen Dots', cursive;
+#header {
+    #hero {
+        .logo {
+            a {
+                display: flex;
+                align-items: center;
+                color: $mainWhite;
 
                 span {
-                    color: $mainYellow;
-                }
-            }
+                    &:nth-child(1) {
+                        font-size: 3rem;
+                        font-family: 'Zen Dots', cursive;
+                        color: $mainYellow;
+                    }
 
-            #navbarNavAltMarkup {
-                .nav-link {
-                    margin-right: 70px;
-                    color: $mainWhite;
-                    font-size: 20px;
-                }
-
-                a:hover {
-                    text-shadow: 1px 1px 1px $mainYellow
+                    &:nth-child(2) {
+                        font-size: 1.5rem;
+                        font-family: 'Zen Dots', cursive;
+                    }
                 }
             }
         }
 
-    }
-
-    .information-top {
-        padding-top: 115px;
-        margin-left: 85px;
-        width: 100%;
-        max-width: 690px;
-
-        .h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 50px;
-            font-weight: bold;
+        #navbarNavAltMarkup {
+            justify-content: flex-end;
         }
 
-        .h5 {
-            font-size: 32px;
-        }
-    }
-}
+        .nav-link {
+            color: $mainWhite;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-bottom: 5px solid $mainBlack;
+            transition: 0.5s ease;
 
-
-@media (max-width: 760px) {
-    .navbar-line {
-        header {
-            margin-left: 5px;
-        }
-
-        .information-top {
-            margin-left: 10px;
-
-            .h1 {
-                font-size: 3em;
-            }
-
-            .h5 {
-                font-size: 1.1em;
-                margin-right: 5px;
+            &:hover {
+                border-bottom: 5px solid $mainYellow;
+                transition: 0.5s ease;
             }
         }
-    }
-}
 
-@media (max-width:545px) {
-    .navbar-line {
-        .information-top {
-            .h1 {
-                font-size: 1.4em;
+        .caption-content {
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+
+            h5 {
+                font-size: 60px;
+                text-shadow: 5px 1px 5px $mainBlack;
             }
 
-            .h5 {
-                font-size: 1em;
-                margin-right: 5px;
+            p {
+                font-size: 32px;
+                text-shadow: 5px 1px 5px $mainBlack;
             }
         }
     }
