@@ -1,0 +1,1 @@
+https://web.dev/i18n/pt/lazy-loading-images/#images-inline-browser-level
