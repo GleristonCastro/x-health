@@ -7,9 +7,17 @@
 // font-family: 'Poppins', sans-serif;
 // font-family: 'Zen Dots', cursive;
 
-body{
-  background-color: #050505;
-  color: #F5F5F5;
+* {
+  @include reset(0, 0, border-box)
+}
+
+body,
+html {
+    width: 100%;
+    min-height: 100vh;
+    color: $mainWhite;
+    background-color: $mainBlack;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
