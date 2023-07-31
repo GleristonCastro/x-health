@@ -1,0 +1,59 @@
+#cases {
+  .row {
+    .cases-title {
+      color: $mainWhite;
+      text-align: center;
+      margin-bottom: 50px;
+
+      span {
+        color: $mainYellow;
+      }
+    }
+
+    .card {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      &-body {
+        background-color: $secondaryBlack;
+        color: $mainWhite;
+        border-radius: 10px;
+      }
+
+      &-title {
+        font-style: italic;
+      }
+    }
+
+    .case-content {
+      display: flex;
+      flex-direction: column;
+      height: 409.42px;
+      justify-content: space-evenly;
+      align-items: stretch;
+      padding: 0 30px;
+
+      .fa-star {
+        color: $mainYellow;
+      }
+
+      .block-reason {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+
+        .case-symbol-style {
+          font-size: 20px;
+        }
+        .case-reason-style{
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
