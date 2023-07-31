@@ -1,37 +1,47 @@
-.about-call {
-    padding-top: 100px;
-    line-height: 70.5px;
-}
-
-.card-content {
-    width: 100%;
-    max-width: 664px;
-
-    .text-winth-img {
-        background-color: $secondaryBlack;
-    }
-
-    .img-container, .text-winth-img {
-        line-height: 30px;
-        width: 100%;
-        max-width: 332px;
-        height: 332px;
-
-        p {
-            width: 100%;
-            max-width: 255px;
+#about {
+    .row {
+        .about-title {
+            color: $mainWhite;
+            text-align: center;
+            margin-bottom: 50px;
         }
+        .about-service{
+            background: $secondaryBlack;
+            cursor: pointer;
 
-        img { width: 100%; }
-        
-    }
-    .rectangle-yellow {
-        width: 9px;
-        height: 9px;
-    }
+            &:hover{
+                background-color: $mainYellow;
+                color: $secondaryBlack;
+                transition: 0.3s ease;
 
-    a {
-        margin:0 5px;
-        text-decoration: none;
+                & a {
+                    color: $secondaryBlack;
+                    transition: 0.3s ease;
+
+                    &:hover{
+                        color: $secondaryBlack;
+                    }
+                }
+
+                & img {
+                    opacity: 0.8;
+                    transition: 0.3s ease;
+                }
+            }
+
+            &-content{
+                padding: 40px;
+            }
+
+            & a {
+                color: $mainWhite;
+                transition: 0.3s ease;
+
+                &:hover {
+                    color: $mainYellow;
+                    transition: 0.3s ease;
+                }
+            }
+        }
     }
 }
