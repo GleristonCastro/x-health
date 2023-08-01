@@ -32,35 +32,57 @@ window.onload = function () {
   ]);
   setTimeout(() => {
 
-    async function range() {
-      const range = document.getElementById("height");
-      const range2 = document.getElementById("weight");
-
+    function range() {
+      const height = document.getElementById("height");
+      const weight = document.getElementById("weight");
+      const result = document.getElementById("result");
+      const bmiResult = document.getElementById("bmiResult");
+    
       const scale = (num, in_min, in_max, out_min, out_max) => {
         return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
       };
-
+    
+      const updateResults = () => {
+        const heightValue = +height.value;
+        const weightValue = +weight.value;
+        const bmiCalc = weightValue / ((heightValue / 100) * (heightValue / 100));
+    
+        const bmiFormatted = bmiCalc.toFixed(2).replace(".", ",");
+        bmiResult.innerHTML = bmiFormatted;
+    
+        const weightFormatted = weightValue.toFixed(2).replace(".", ",");
+        result.innerHTML = weightFormatted;
+      };
+    
       const handleRangeInput = (e) => {
         const value = +e.target.value;
         const label = e.target.nextElementSibling;
         const rangeWidth = getComputedStyle(e.target).getPropertyValue("width");
         const labelWidth = getComputedStyle(label).getPropertyValue("width");
-
+    
         const numWidth = +rangeWidth.substring(0, rangeWidth.length - 2);
         const numLabelWidth = +labelWidth.substring(0, labelWidth.length - 2);
         const max = +e.target.max;
         const min = +e.target.min;
         const left =
-          value * (numWidth / max) -
-          numLabelWidth / 2 +
-          scale(value, min, max, 10, -10);
+          value * (numWidth / max) - numLabelWidth / 2 + scale(value, min, max, 10, -10);
         label.style.left = `${left}px`;
         label.innerHTML = value;
+    
+        updateResults();
       };
-
-      range.addEventListener("input", handleRangeInput);
-      range2.addEventListener("input", handleRangeInput);
+    
+      height.addEventListener("input", handleRangeInput);
+      weight.addEventListener("input", handleRangeInput);
+    
+      updateResults();
+      handleRangeInput({ target: height });
+      handleRangeInput({ target: weight });
     }
+    
+    range();
+    
+
     const marqueeText = document.getElementById("marqueeText");
     if (marqueeText) {
       const scrollSpeed = 50;
@@ -121,27 +143,27 @@ window.onload = function () {
       }, 320)
     }
 
-    async function exec1() {
-      try {
-        const step1 = await promiseControl(videoControl())
-        return step1;
-      } catch (error) {
-        console.log(error.message);
-      }
-    }
+    // async function exec1() {
+    //   try {
+    //     const step1 = await promiseControl(videoControl())
+    //     return step1;
+    //   } catch (error) {
+    //     console.log(error.message);
+    //   }
+    // }
 
-    exec1()
+    // exec1()
 
-    async function exec2() {
-      try {
-        const step2 = await promiseControl(range())
-        return step2;
-      } catch (error) {
-        console.log(error.message);
-      }
-    }
+    // async function exec2() {
+    //   try {
+    //     const step2 = await promiseControl(range())
+    //     return step2;
+    //   } catch (error) {
+    //     console.log(error.message);
+    //   }
+    // }
 
-    exec2()
+    // exec2()
 
     (function() {
       var backTop = document.getElementsByClassName('js-back-to-top')[0];
