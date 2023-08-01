@@ -11,8 +11,11 @@
   @include reset(0, 0, border-box)
 }
 
-body,
 html {
+    scroll-behavior: smooth;
+}
+
+body {
     width: 100%;
     min-height: 100vh;
     color: $mainWhite;
