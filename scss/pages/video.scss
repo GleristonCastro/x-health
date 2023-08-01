@@ -28,6 +28,15 @@
     width: 100%;
     flex-direction: column;
     z-index: 50;
+
+    .hoverEvent:hover {
+        opacity: 1;
+    }
+}
+
+#btnVideo {
+    background-color: transparent;
+    border: none;
 }
 
 #videoId {
