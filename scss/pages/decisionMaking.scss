@@ -22,21 +22,41 @@
       display: flex;
       align-content: center;
       gap: 20px;
+      background: url(../../../app/assets/images/decisionMaking/bgcards.webp);
+      border: 5px solid #ffffff47;
+      transition: 0.5s ease;
+      cursor: pointer;
+
+      &:hover {
+        border-color: $mainYellow;
+        transition: 0.5s ease;
+      }
 
       i {
         font-size: 4rem;
         color: $mainYellow;
+      }
+
+      div{
+        padding: 0 30px;
       }
     }
   }
 
   .button-enroll {
     padding: 20px;
-    background-color: $mainYellow;
-    color: $secondaryBlack;
+    border: 5px solid #ffffff47;
+    color: $mainWhite;
     text-transform: uppercase;
     text-align: center;
     margin-top: 50px;
     border-radius: 10px;
+    transition: 0.5s ease;
+
+    &:hover{
+      color: $mainYellow;
+      border-color: $mainYellow;
+      transition: 0.5s ease;
+    }
   }
 }
