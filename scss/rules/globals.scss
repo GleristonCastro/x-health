@@ -33,3 +33,15 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
 }
+
+.carousel-indicators {
+  align-items: flex-end;
+
+  & [data-bs-target]:hover{
+    background-color: $mainYellow;
+    transition: .5s ease;
+  }
+  .active {
+    height: 6px;
+  }
+}
