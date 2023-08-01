@@ -8,6 +8,7 @@
     background-color: #050505;
     background-image: url('../../../app/assets/images/footer/div-effect.webp');
     min-height: 233px;
+    margin-top: -2px;
   }
 
   .footer-content{
@@ -115,5 +116,54 @@
       align-items: center;
       justify-content: center;
     }
+  }
+  .cd-icon {
+    --size: 1em;
+    font-size: var(--size);
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    color: inherit;
+    fill: currentColor;
+    line-height: 1;
+    flex-shrink: 0;
+    max-width: initial;
+  }
+  
+  .cd-icon use {
+    color: inherit;
+    fill: currentColor;
+  }
+  
+  .back-to-top {
+    --size: 50px;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 10;
+    border-radius: 50%;
+    background-color: hsla(230, 13%, 9%, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+  }
+  
+  .back-to-top:hover {
+    background-color: hsl(230, 13%, 9%);
+  }
+  
+  .back-to-top .cd-icon {
+    --size: 20px;
+    display: block;
+    margin: auto;
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .back-to-top--is-visible {
+    visibility: visible;
+    opacity: 1;
   }
 }
