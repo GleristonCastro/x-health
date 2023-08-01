@@ -1,5 +1,8 @@
 #header {
     #hero {
+        .navbarChanges {
+            z-index: 99;
+        }
         .logo {
             a {
                 display: flex;
@@ -28,10 +31,10 @@
         .nav-link {
             color: $mainWhite;
             font-size: 20px;
-            font-weight: 600;
             text-transform: uppercase;
             border-bottom: 5px solid $mainBlack;
             transition: 0.5s ease;
+            padding: 0 15px;
 
             &:hover {
                 border-bottom: 5px solid $mainYellow;
