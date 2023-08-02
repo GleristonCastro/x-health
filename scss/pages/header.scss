@@ -30,7 +30,7 @@
 
         .nav-link {
             color: $mainWhite;
-            font-size: 20px;
+            font-size: 1rem;
             text-transform: uppercase;
             border-bottom: 5px solid $mainBlack;
             transition: 0.5s ease;
@@ -51,12 +51,12 @@
             text-align: left;
 
             h5 {
-                font-size: 60px;
+                font-size: 3.75rem;
                 text-shadow: 5px 1px 5px $mainBlack;
             }
 
             p {
-                font-size: 32px;
+                font-size: 2rem;
                 text-shadow: 5px 1px 5px $mainBlack;
             }
         }
