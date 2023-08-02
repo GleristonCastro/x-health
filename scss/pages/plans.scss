@@ -26,7 +26,7 @@
       cursor: pointer;
       transition: 0.3s ease;
 
-      &:hover{
+      &:hover {
         transform: scale(1.03);
         transition: 0.3s ease;
       }
@@ -40,14 +40,14 @@
           height: 150px;
         }
 
-      &.special-offer{
-        background-color: $mainYellow;
-        color: $secondaryBlack;
+        &.special-offer {
+          background-color: $mainYellow;
+          color: $secondaryBlack;
 
-        .card-price {
-          color: $mainBlack;
+          .card-price {
+            color: $mainBlack;
+          }
         }
-      }
       }
 
       &-title {
@@ -60,8 +60,169 @@
         font-weight: bold;
         font-style: italic;
       }
+    }
+  }
 
-      
+  .modal-content {
+    background: $secondaryBlack;
+
+    .modal-header,
+    .modal-footer {
+      border: 0;
+    }
+
+    .modal-footer {
+      justify-content: center;
+    }
+
+    .form-control {
+      background: none;
+      border: none;
+      border-bottom: 1px solid $mainWhite;
+      border-radius: 0;
+      color: $mainWhite;
+      height: 45px;
+
+      &:hover,
+      &:focus {
+        color: $mainYellow;
+        border-color: $mainYellow;
+      }
+    }
+
+    textarea:focus,
+    input:focus {
+      box-shadow: 0 0 0 0;
+      outline: 0;
+    }
+
+    input::placeholder {
+      color: $mainWhite;
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: $secondaryBlack url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='16' height='16' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='white'/></g></svg>") no-repeat;
+      background-position: right 15px top 15px;
+      width: 100%;
+      height: 45px;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid $mainWhite;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      color: $mainWhite;
+
+      &:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+        color: $mainYellow;
+        border-color: $mainYellow;
+      }
+
+      &:focus {
+        color: $mainYellow;
+        border-color: $mainYellow;
+      }
+    }
+  }
+
+  .card-container {
+    position: relative;
+    height: 250px;
+    width: 400px;
+
+    .front {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: url('../../../app/assets/images/plans/6097014.webp');
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      backface-visibility: hidden;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+      padding: 20px;
+      transform: perspective(1000px) rotateY(0deg);
+      transition: transform .4s ease-out;
+
+      .image {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+
+        img {
+          height: 50px;
+        }
+      }
+      .card-number-box {
+        padding: 30px 0;
+        font-size: 22px;
+        color: #fff;
+      }
+      .card-holder-name {
+        text-transform: uppercase;
+      }
+      .flexbox {
+        display: flex;
+      }
+      .box:nth-child(1) {
+        margin-right: auto;
+      }
+      .box {
+        font-size: 15px;
+        color: #fff;
+      }
+    }
+    .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url('../../../app/assets/images/plans/6097014.webp');
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      padding: 20px 0;
+      text-align: right;
+      backface-visibility: hidden;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+      transform: perspective(1000px) rotateY(180deg);
+      transition: transform .4s ease-out;
+
+      .stripe {
+        background: #000;
+        width: 100%;
+        margin: 10px 0;
+        height: 50px;
+      }
+      .box {
+        padding: 0 20px;
+
+        span {
+          color: #fff;
+          font-size: 15px;
+        }
+        .cvv-box {
+          height: 50px;
+          padding: 10px;
+          margin-top: 5px;
+          color: #333;
+          background: #fff;
+          border-radius: 5px;
+          width: 100%;
+        }
+        img {
+          margin-top: 30px;
+          height: 30px;
+        }
+      }
     }
   }
 }
