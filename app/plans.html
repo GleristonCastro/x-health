@@ -2,17 +2,18 @@
   <h2 class="plans-title display-4">Planos a partir de<br>
     <span>R$ 166,95 /mês</span>
   </h2>
-  <p class="fs-4 text-center mb-5">Com nossa associação, você tem acesso para ligar para nossas academias em todo o país, com dezenas de aulas para
+  <p class="fs-4 text-center mb-5">Com nossa associação, você tem acesso para ligar para nossas academias em todo o
+    país, com dezenas de aulas para
     escolher, treinar com os melhores equipamentos.</p>
 </div>
 <div class="row g-3">
-  <div class="col-6">
+  <div class="col-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
     <div class="card">
       <div class="card-body">
         <div class="row g-0 align-items-center">
           <div class="col-7">
             <h5 class="card-title">Assinatura por 6 meses</h5>
-          <p class="card-text">Acesso à nossa academia e aulas por meio ano.</p>
+            <p class="card-text">Acesso à nossa academia e aulas por meio ano.</p>
           </div>
           <div class="col-5">
             <p class="card-price fs-2">R$ 1066,50</p>
@@ -21,13 +22,13 @@
       </div>
     </div>
   </div>
-  <div class="col-6">
+  <div class="col-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
     <div class="card">
       <div class="card-body special-offer">
         <div class="row g-0 align-items-center">
           <div class="col-7">
             <h5 class="card-title">Assinatura por 12 meses<span class="badge badge-price">Melhor escolha</span></h5>
-          <p class="card-text">Acesso à nossa academia e aulas por 1 ano.</p>
+            <p class="card-text">Acesso à nossa academia e aulas por 1 ano.</p>
           </div>
           <div class="col-5">
             <p class="card-price fs-2">R$ 1990,80</p>
@@ -36,13 +37,13 @@
       </div>
     </div>
   </div>
-  <div class="col-4">
+  <div class="col-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
     <div class="card">
       <div class="card-body">
         <div class="row g-0 align-items-center">
           <div class="col-7">
             <h5 class="card-title">Por 3 meses</h5>
-          <p class="card-text">Acesso total a academia</p>
+            <p class="card-text">Acesso total a academia</p>
           </div>
           <div class="col-5">
             <p class="card-price fs-2">R$ 572,25</p>
@@ -51,13 +52,13 @@
       </div>
     </div>
   </div>
-  <div class="col-4">
+  <div class="col-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
     <div class="card">
       <div class="card-body">
         <div class="row g-0 align-items-center">
           <div class="col-7">
             <h5 class="card-title">Por 1 mês</h5>
-          <p class="card-text">Acesso total a academia</p>
+            <p class="card-text">Acesso total a academia</p>
           </div>
           <div class="col-5">
             <p class="card-price fs-2">R$ 166,95</p>
@@ -66,18 +67,222 @@
       </div>
     </div>
   </div>
-  <div class="col-4">
+  <div class="col-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
     <div class="card">
       <div class="card-body">
         <div class="row g-0 align-items-center">
           <div class="col-7">
             <h5 class="card-title">Diária</h5>
-          <p class="card-text">Acesso total a academia</p>
+            <p class="card-text">Acesso total a academia</p>
           </div>
           <div class="col-5">
             <p class="card-price fs-2">R$ 47,65</p>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body special-offer">
+                <div class="row g-0 align-items-center">
+                  <div class="col-7">
+                    <h5 class="card-title">Assinatura por 12 meses<span class="badge badge-price">Melhor escolha</span></h5>
+                    <p class="card-text">Acesso à nossa academia e aulas por 1 ano.</p>
+                  </div>
+                  <div class="col-5">
+                    <p class="card-price fs-2">R$ 1990,80</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-7 p-4">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" autocomplete="username">
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Sobrenome</label>
+                <input type="texte" class="form-control" id="lastName">
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" autocomplete="email">
+              </div>
+              <div class="col-md-6">
+                <label for="password" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="password" autocomplete="current-password">
+              </div>
+              <div class="col-12">
+                <label for="address" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="address" placeholder="Informe seu endereço">
+              </div>
+              <div class="col-6">
+                <label for="neighborhood" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="neighborhood">
+              </div>
+              <div class="col-md-6">
+                <label for="city" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="city">
+              </div>
+              <div class="col-md-6">
+                <label for="state" class="form-label">Estado</label>
+                <select id="state" class="form-select">
+                  <option selected>Escolha...</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                  <option value="EX">Estrangeiro</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="zipCode" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="zipCode">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Receber o link do App para download?
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-5 p-4">
+            <form class="row g-3">
+              
+              <div class="col-12 g-0">
+                
+                <div class="creadCardBox d-flex justify-content-center">
+
+                  <div class="card-container">
+
+                    <div class="front">
+                        <div class="image">
+                            <img src="./assets/images/plans/chip.webp" alt="">
+                            <img src="./assets/images/plans/visa.webp" alt="">
+                        </div>
+                        <div class="card-number-box">0000 0000 0000 0000</div>
+                        <div class="flexbox">
+                            <div class="box">
+                                <span>Titular do cartão</span>
+                                <div class="card-holder-name">CLIENTE XHEALT</div>
+                            </div>
+                            <div class="box">
+                                <span>Validade</span>
+                                <div class="expiration">
+                                    <span class="exp-month">MM</span>
+                                    <span> / </span>
+                                    <span class="exp-year">YY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="back">
+                        <div class="stripe"></div>
+                        <div class="box">
+                            <span>CVV</span>
+                            <div class="cvv-box"></div>
+                            <img src="./assets/images/plans/visa.webp" alt="">
+                        </div>
+                    </div>
+            
+                </div>
+
+                </div>
+                
+              </div>
+              <div class="col-md-12">
+                <label for="credcardNumber" class="form-label">Número do cartão</label>
+                <input type="text" class="form-control card-number-input" id="credcardNumber" maxlength="16">
+              </div>
+              <div class="col-md-4">
+                <label for="month" class="form-label">Mês</label>
+                <select id="month" class="form-select month-input">
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="year" class="form-label">Ano</label>
+                <select id="year" class="form-select year-input">
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                  <option>32</option>
+                  <option>33</option>
+                  <option>34</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control cvv-input" id="cvv" maxlength="4">
+              </div>
+              <div class="col-md-12">
+                <label for="nameprintedCard" class="form-label">Nome impresso no cartão</label>
+                <input type="text" class="form-control card-holder-input" id="nameprintedCard" maxlength="38">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning">Faça seu pedido</button>
       </div>
     </div>
   </div>
