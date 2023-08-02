@@ -24,6 +24,29 @@
     animation: marquee 120s linear infinite;
   }
 
+  #infoPhrases {
+    width: 100%;
+    text-align: right;
+    padding: 0 20px;
+
+    a {
+      color: $mainYellow;
+
+      &:hover {
+        color: $mainWhite;
+      }
+    }
+  }
+  #phrasesCollapse{
+    text-align: center;
+    max-width: 100%;
+
+    .card-body {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
+
   .track2 {
     position: absolute;
     white-space: nowrap;
