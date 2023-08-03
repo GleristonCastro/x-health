@@ -29,29 +29,44 @@
     .case-content {
       display: flex;
       flex-direction: column;
-      height: 409.42px;
       justify-content: space-evenly;
       align-items: stretch;
       padding: 0 30px;
+
+      div {
+        padding: 10px 0;
+      }
 
       .fa-star {
         color: $mainYellow;
       }
 
       .block-reason {
-        font-size: 36px;
+        font-size: 2.25rem;
         font-style: normal;
         font-weight: 600;
         line-height: 20px;
         text-align: center;
 
         .case-symbol-style {
-          font-size: 20px;
+          font-size: 1.25rem;
         }
         .case-reason-style{
-          font-size: 16px;
+          font-size: 1rem;
           line-height: 16px;
           font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px){
+  #cases {
+    .row {
+      .case-content {
+        div {
+          padding: 8px 0;
         }
       }
     }

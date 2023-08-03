@@ -3,6 +3,7 @@
         .navbarChanges {
             z-index: 99;
         }
+
         .logo {
             a {
                 display: flex;
@@ -30,7 +31,7 @@
 
         .nav-link {
             color: $mainWhite;
-            font-size: 20px;
+            font-size: 1rem;
             text-transform: uppercase;
             border-bottom: 5px solid $mainBlack;
             transition: 0.5s ease;
@@ -51,13 +52,76 @@
             text-align: left;
 
             h5 {
-                font-size: 60px;
+                font-size: 3.75rem;
                 text-shadow: 5px 1px 5px $mainBlack;
             }
 
             p {
-                font-size: 32px;
+                font-size: 2rem;
                 text-shadow: 5px 1px 5px $mainBlack;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #header{
+        #hero {
+            .caption-content {
+                h5 {
+                    font-size: 2.75rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+            .carousel-item{
+                .w-100 {
+                    width: auto !important;
+                    margin-left: -50%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #header{
+        #hero {
+            .caption-content {
+                h5 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1.9rem;
+                }
+            }
+            .carousel-item{
+                .w-100 {
+                    width: auto !important;
+                    margin-left: -90%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #header{
+        #hero {
+            .caption-content {
+                h5 {
+                    font-size: 2.55rem;
+                }
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+            .carousel-item{
+                .w-100 {
+                    width: auto !important;
+                    margin-left: -160%;
+                }
             }
         }
     }

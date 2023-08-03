@@ -28,6 +28,12 @@
     }
   }
 
+  .tab-pane{
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
   .schedules-table {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -35,6 +41,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: center;
+    min-width: 1296px;
 
     div {
       height: 80px;
@@ -45,7 +52,7 @@
 
     .title-table {
       font-family: 'Poppins', sans-serif;
-      font-size: 16px;
+      font-size: 1rem;
       text-transform: uppercase;
       font-weight: 700;
       opacity: 0.7;
@@ -53,7 +60,7 @@
 
     .times-of-day {
       font-family: 'Poppins', sans-serif;
-      font-size: 16px;
+      font-size: 1rem;
       text-transform: uppercase;
       font-weight: 700;
       opacity: 0.7;
@@ -61,7 +68,7 @@
 
     .schedules-event {
       font-family: 'Poppins', sans-serif;
-      font-size: 16px;
+      font-size: 1rem;
       text-transform: uppercase;
       font-weight: 700;
       opacity: 0.7;
