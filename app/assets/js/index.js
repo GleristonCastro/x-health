@@ -102,66 +102,7 @@ window.onload = function () {
       moveMarquee();
     }
 
-    function credCardForm() {
-      const cardNumberInput = document.querySelector('.card-number-input');
-      const cardHolderInput = document.querySelector('.card-holder-input');
-      const monthInput = document.querySelector('.month-input');
-      const yearInput = document.querySelector('.year-input');
-      const cvvInput = document.querySelector('.cvv-input');
-      const frontCard = document.querySelector('.front');
-      const backCard = document.querySelector('.back');
-
-      cardNumberInput.oninput = () => {
-        const cardNumberValue = cardNumberInput.value.replace(/\s/g, ''); // Remover espaços em branco, caso já existam
-        const formattedCardNumber = formatCardNumber(cardNumberValue);
-        document.querySelector('.card-number-box').innerText = formattedCardNumber;
-      };
-
-      function formatCardNumber(cardNumber) {
-        const formatted = cardNumber.replace(/\s/g, '').match(/.{1,4}/g);
-        return formatted ? formatted.join(' ') : '';
-      }
-
-      cardHolderInput.oninput = () => {
-        document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
-      }
-
-      monthInput.oninput = () => {
-        document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
-      }
-
-      yearInput.oninput = () => {
-        document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
-      }
-
-      cvvInput.onmouseenter = () => {
-        document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
-        document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
-      }
-
-      cvvInput.onmouseleave = () => {
-        document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
-        document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
-      }
-
-      cvvInput.addEventListener('focus', () => {
-        frontCard.style.transform = 'perspective(1000px) rotateY(-180deg)';
-        backCard.style.transform = 'perspective(1000px) rotateY(0deg)';
-      });
-
-      cvvInput.addEventListener('blur', () => {
-        frontCard.style.transform = 'perspective(1000px) rotateY(0deg)';
-        backCard.style.transform = 'perspective(1000px) rotateY(180deg)';
-      });
-
-      cvvInput.oninput = () => {
-        document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
-      }
-    }
-
-    credCardForm()
-
-    function videoControl() {
+    async function videoControl() {
       const btn = document.getElementById('btnVideo');
       const boxVideo = document.getElementById('videoId');
       const img = document.querySelector('.change');
