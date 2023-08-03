@@ -5,11 +5,12 @@
             text-align: center;
             margin-bottom: 50px;
         }
-        .about-service{
+
+        .about-service {
             background: $secondaryBlack;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 background-color: $mainYellow;
                 color: $secondaryBlack;
                 transition: 0.3s ease;
@@ -18,7 +19,7 @@
                     color: $secondaryBlack;
                     transition: 0.3s ease;
 
-                    &:hover{
+                    &:hover {
                         color: $secondaryBlack;
                     }
                 }
@@ -29,7 +30,7 @@
                 }
             }
 
-            &-content{
+            &-content {
                 padding: 40px;
             }
 
@@ -39,6 +40,33 @@
 
                 &:hover {
                     color: $mainYellow;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+
+        .card-img-overlay {
+            .text-center {
+                text-align: center !important;
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                align-items: flex-end;
+                text-shadow: 2px 2px 3px #000;
+                //cursor: pointer;
+            }
+        }
+        .text-bg-dark{
+            
+            background: $secondaryBlack;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: $mainBlack !important;
+                transition: 0.3s ease;
+
+                & img {
+                    opacity: 0.8;
                     transition: 0.3s ease;
                 }
             }
@@ -64,6 +92,7 @@
                 h5 {
                     font-size: 1.15rem;
                 }
+
                 p {
                     font-size: 0.85rem;
                 }
@@ -76,7 +105,7 @@
     #about {
         .row {
             .about-service {
-                .col-12{
+                .col-12 {
                     .img-fluid {
                         width: 100%;
                     }
@@ -90,7 +119,7 @@
     #about {
         .row {
             .about-service {
-                .col-12{
+                .col-12 {
                     .img-fluid {
                         width: 100%;
                     }
