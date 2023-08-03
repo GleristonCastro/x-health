@@ -98,13 +98,13 @@ window.onload = function () {
       moveMarquee();
     }
 
-    async function videoControl() {
+   
       const btn = document.getElementById('btnVideo');
       const boxVideo = document.getElementById('videoId');
       const img = document.querySelector('.change');
       const textVideoCenter = document.getElementById('text-video-center')
     
-      const execute = () => {
+      btn.addEventListener('click', () => {
         if (boxVideo.paused) {
           boxVideo.play();
           img.setAttribute('src', './assets/images/pause.svg');
@@ -118,9 +118,7 @@ window.onload = function () {
           btn.style.opacity = '1';
           textVideoCenter.style.display = 'block'
         }
-      }
-    
-      btn.addEventListener('click', execute);
+      });
     
       btn.addEventListener('mouseenter', () => {
         if (boxVideo.paused) {
@@ -135,35 +133,9 @@ window.onload = function () {
         img.classList.remove('hoverEvent');
         btn.style.opacity = '0';
       });
-    }
+  
 
-    function promiseControl(func) {
-      return new Promise((resolve) => {
-        setTimeout(() => resolve(func))
-      }, 320)
-    }
-
-    // async function exec1() {
-    //   try {
-    //     const step1 = await promiseControl(videoControl())
-    //     return step1;
-    //   } catch (error) {
-    //     console.log(error.message);
-    //   }
-    // }
-
-    // exec1()
-
-    // async function exec2() {
-    //   try {
-    //     const step2 = await promiseControl(range())
-    //     return step2;
-    //   } catch (error) {
-    //     console.log(error.message);
-    //   }
-    // }
-
-    // exec2()
+    
 
     (function() {
       var backTop = document.getElementsByClassName('js-back-to-top')[0];
