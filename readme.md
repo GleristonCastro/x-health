@@ -1,9 +1,9 @@
 # Project Title
 _______
 
-### X Health One bit code hackathon
+### X Health [One Bit Code](https://pro.onebitcode.com/) hackathon
 
-<img src="./app/assets/images/gif-X-health.gif">
+<img src="./app/assets/images/gifs/gif-X-health.gif" width="95%" height="500px">
 
 ## Description
 
@@ -61,10 +61,19 @@ After the screen locally access the terminal using a text editor preferably visu
 ### Executing program
 After doing these steps you can see running the index.html file, modify and even Contribute to the project...
 
+## Link to figma
+<img src="./app/assets/images/gifs/gif-X-health-figma.gif" width="600px" heigth="400px">
+
+[Figma](https://www.figma.com/file/yf95WdvXWGprG3vvzCsKn8/Xhealth?type=design&node-id=0-1&mode=design&t=14nwqS8VHM0C7DjR-0)
+
 ## Authors
 
 * Gleirison
 * Daniel Silverio
+
+## Additional credits
+
+[Freepik](https://www.freepik.com/)
 
 ## Technologies
 * Javascript
@@ -72,3 +81,4 @@ After doing these steps you can see running the index.html file, modify and even
 * Css
 * Sass
 * Html
+* Figma
