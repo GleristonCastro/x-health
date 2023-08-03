@@ -48,3 +48,24 @@ a {
     height: 6px;
   }
 }
+
+.scroll {
+  overflow-y: scroll;
+  display: inline-block;
+}
+.scroll--simple::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+}
+.scroll--simple::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+.scroll--simple::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+.scroll--simple::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.scroll--simple::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 0.9);
+}

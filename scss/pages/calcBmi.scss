@@ -1,6 +1,7 @@
 #calcBmi {
   background: $secondaryBlack;
   padding: 50px 0;
+
   .row {
     .calcBmi-title {
       color: $mainWhite;
@@ -24,13 +25,17 @@
       }
     }
   }
-  .ideal-weight, .bmi-now{
-    font-weight: 700!important;
+
+  .ideal-weight,
+  .bmi-now {
+    font-weight: 700 !important;
     color: $mainYellow;
 
-    span{
-    font-weight: 700!important;
-    };
+    span {
+      font-weight: 700 !important;
+    }
+
+    ;
   }
 }
 
@@ -121,12 +126,12 @@
     cursor: pointer;
   }
 
-  .position-left-fix{
+  .position-left-fix {
     left: 35px !important;
   }
 }
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
   #calcBmi {
     .row {
       ul {
@@ -135,12 +140,58 @@
         justify-content: center;
         border: 1px solid $mainWhite;
         border-radius: 10px;
-        padding: 10px 0;
+        padding: 10px;
+        flex-wrap: wrap;
 
         li {
           i {
             display: none;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #calcBmi {
+    .rangers {
+      .range-box {
+        input[type=range]{
+          width: 100%;
+        }
+        .rangers input[type=range] + label {
+          left: 240.364px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #calcBmi {
+    .rangers {
+      .range-box {
+        input[type=range]{
+          width: 100%;
+        }
+        .rangers input[type=range] + label {
+          left: 230.89px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #calcBmi {
+    .rangers {
+      .range-box {
+        input[type=range]{
+          width: 100%;
+        }
+        .rangers input[type=range] + label {
+          left: 176.581px;
         }
       }
     }

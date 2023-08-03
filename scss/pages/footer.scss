@@ -6,7 +6,7 @@
 
   .footer-divider {
     background-color: #050505;
-    background-image: url('../../../app/assets/images/footer/div-effect.webp');
+    background-image: url('../../assets/images/footer/div-effect.webp');
     min-height: 233px;
     margin-top: -2px;
   }
@@ -20,6 +20,10 @@
     display: flex;
     align-items: center;
     padding: 20px 0;
+  }
+
+  .worldMap{
+    margin: 30px 0;
   }
 
   span {
@@ -189,6 +193,22 @@
       ul {
         justify-content: center;
       }
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 540px){
+  #footer {
+    .col-xs-50 {
+      width: 50%;
+    }
+  }
+}
+
+@media(max-width: 540px){
+  #footer {
+    .col-xs-50 {
+      margin-top: 30px;
     }
   }
 }

@@ -72,3 +72,22 @@
     }
   }
 }
+
+@media (max-width: 540px) {
+  #cases {
+    .row {
+      .img-fluid {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px){
+  #cases {
+    .img-fluid{
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+}

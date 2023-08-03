@@ -140,7 +140,7 @@
       width: 100%;
       top: 0;
       left: 0;
-      background: url('../../../app/assets/images/plans/6097014.webp');
+      background: url('../../assets/images/plans/6097014.webp');
       background-size: contain;
       background-repeat: no-repeat;
       border-radius: 5px;
@@ -185,7 +185,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background: url('../../../app/assets/images/plans/6097014.webp');
+      background: url('../../assets/images/plans/6097014.webp');
       background-size: contain;
       background-repeat: no-repeat;
       border-radius: 5px;
@@ -221,6 +221,42 @@
         img {
           margin-top: 30px;
           height: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 425px){
+  #plans {
+    .card-container {
+      .front {
+        background-size: 100% 100%;
+
+        .card-number-box {
+          padding: 20px 0;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .modal-body {
+      .p-4 {
+        padding: 0 !important;
+        margin: 20px 0;
+      }
+    }
+    .row {
+      .badge-price {
+        display: none;
+      }
+    }
+
+    .modal-body {
+      .card-body{
+        .col-7, .col-5 {
+          width: 100%;
+          text-align: center;
         }
       }
     }

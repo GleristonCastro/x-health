@@ -9,9 +9,11 @@
     figure {
       overflow: hidden;
     }
+
     .hoverShine figure {
       position: relative;
     }
+
     .hoverShine figure::before {
       position: absolute;
       top: 0;
@@ -21,24 +23,45 @@
       content: '';
       width: 50%;
       height: 100%;
-      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
       -webkit-transform: skewX(-25deg);
       transform: skewX(-25deg);
     }
+
     .hoverShine figure:hover::before {
       -webkit-animation: shine .75s;
       animation: shine .75s;
     }
+
     @-webkit-keyframes shine {
       100% {
         left: 125%;
       }
     }
+
     @keyframes shine {
       100% {
         left: 125%;
       }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  #socialNetwork {
+    .col-xxl-4 {
+      flex: 0 0 auto;
+      width: 25% !important;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  #socialNetwork {
+    .col-xxl-4 {
+      flex: 0 0 auto;
+      width: 100% !important;
     }
   }
 }
