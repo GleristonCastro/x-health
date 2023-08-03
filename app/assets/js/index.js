@@ -219,5 +219,5 @@ window.onload = function () {
         }
       }());
 
-  }, 800)
+  }, 810)
 };
