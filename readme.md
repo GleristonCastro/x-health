@@ -64,7 +64,7 @@ After doing these steps you can see running the index.html file, modify and even
 ## Link to figma
 <img src="./app/assets/images/gifs/gif-X-health-figma.gif" width="600px" heigth="400px">
 
-[Figma](https://www.figma.com/file/yf95WdvXWGprG3vvzCsKn8/Xhealth?type=design&node-id=0-1&mode=design&t=14nwqS8VHM0C7DjR-0)
+[Figma](https://www.figma.com/file/yf95WdvXWGprG3vvzCsKn8/Xhealth?type=design&node-id=4%3A232&mode=dev)
 
 ## Authors
 
