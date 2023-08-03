@@ -45,3 +45,21 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    #about {
+        .row {
+            .about-service-content {
+                padding: 20px;
+                margin: auto 0;
+
+                h5 {
+                    font-size: 1.15rem;
+                }
+                p {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}

@@ -28,6 +28,12 @@
     }
   }
 
+  .tab-pane{
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
   .schedules-table {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -35,6 +41,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: center;
+    min-width: 1296px;
 
     div {
       height: 80px;

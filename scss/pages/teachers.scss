@@ -75,3 +75,15 @@
     width: 5%;
   }
 }
+
+@media (max-width:768px){
+  #teachers {
+    .carousel-inner {
+      .teacher-box {
+        .teacher-content {
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }
+}

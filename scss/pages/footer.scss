@@ -11,39 +11,45 @@
     margin-top: -2px;
   }
 
-  .footer-content{
+  .footer-content {
     background-color: #EBBA34;
     margin-top: -20px;
   }
 
-  .footer-logo{
+  .footer-logo {
     display: flex;
     align-items: center;
     padding: 20px 0;
   }
 
-    span{
-      &:nth-child(1){
-        font-size: 3rem;
-        font-family: 'Zen Dots', cursive;
-      }
-      &:nth-child(2){
-        font-size: 1.5rem;
-        font-family: 'Zen Dots', cursive;
-      }
-    };
-  
+  span {
+    &:nth-child(1) {
+      font-size: 3rem;
+      font-family: 'Zen Dots', cursive;
+    }
+
+    &:nth-child(2) {
+      font-size: 1.5rem;
+      font-family: 'Zen Dots', cursive;
+    }
+  }
+
+  ;
+
 
   .footer-seals {
     margin: 30px 0;
   }
 
-  #languages, #countries, #state, #city {
+  #languages,
+  #countries,
+  #state,
+  #city {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background: #EBBA34 url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='16' height='16' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='black'/></g></svg>") no-repeat;
-  background-position: right 15px top 15px;
+    background-position: right 15px top 15px;
     width: 100%;
     height: 45px;
     border: 1px solid #191919;
@@ -51,14 +57,15 @@
     padding: 5px 10px;
     margin-bottom: 10px;
 
-    &:focus{
+    &:focus {
       box-shadow: 0 0 0 0;
       outline: 0;
     }
-}
+  }
 
 
-  h4, h5 {
+  h4,
+  h5 {
     text-transform: uppercase;
     font-weight: 700;
     padding-bottom: 10px;
@@ -105,7 +112,8 @@
       }
     }
   }
-  .footer-copyright{
+
+  .footer-copyright {
     border-top: 1px solid #191919;
     text-align: center;
     margin-top: 50px;
@@ -117,6 +125,7 @@
       justify-content: center;
     }
   }
+
   .cd-icon {
     --size: 1em;
     font-size: var(--size);
@@ -129,12 +138,12 @@
     flex-shrink: 0;
     max-width: initial;
   }
-  
+
   .cd-icon use {
     color: inherit;
     fill: currentColor;
   }
-  
+
   .back-to-top {
     --size: 50px;
     width: var(--size);
@@ -150,20 +159,36 @@
     opacity: 0;
     transition: 0.2s;
   }
-  
+
   .back-to-top:hover {
     background-color: hsl(230, 13%, 9%);
   }
-  
+
   .back-to-top .cd-icon {
     --size: 20px;
     display: block;
     margin: auto;
     color: hsl(0, 0%, 100%);
   }
-  
+
   .back-to-top--is-visible {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  #footer {
+    .footer-copyright {
+      .col-12 {
+        height: 100px;
+      }
+    }
+
+    .socialNetworkicons {
+      ul {
+        justify-content: center;
+      }
+    }
   }
 }

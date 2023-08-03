@@ -125,3 +125,24 @@
     left: 35px !important;
   }
 }
+
+@media (max-width:1024px){
+  #calcBmi {
+    .row {
+      ul {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        border: 1px solid $mainWhite;
+        border-radius: 10px;
+        padding: 10px 0;
+
+        li {
+          i {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
