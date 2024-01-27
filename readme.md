@@ -68,7 +68,7 @@ After doing these steps you can see running the index.html file, modify and even
 
 ## Authors
 
-* Gleirison
+* Gleriston
 * Daniel Silverio
 
 ## Additional credits
